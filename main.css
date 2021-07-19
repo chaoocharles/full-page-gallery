@@ -1,0 +1,17 @@
+.section > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(243, 167, 4);
+}
+.slide div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fp-controlArrow.fp-next {
+  right: 45px !important;
+}
+.fp-controlArrow.fp-prev {
+  left: 45px !important;
+}

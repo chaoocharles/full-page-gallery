@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Full Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
+      integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+      integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section">
+        <div>
+          <div class="slide">
+            <div>
+              <img src="images/image.png" alt="first image" />
+              <img src="images/image3.png" alt="first image" />
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/image3.png" alt="first image" />
+            <img src="images/image.png" alt="first image" />
+          </div>
+          <div class="slide">
+            <img src="images/image4.png" alt="first image" />
+            <img src="images/image3.png" alt="first image" />
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div>
+          <img src="images/image3.png" alt="first image" />
+          <img src="images/image4.png" alt="first image" />
+        </div>
+      </div>
+      <div class="section">
+        <div>
+          <img src="images/image.png" alt="first image" />
+          <img src="images/image2.png" alt="first image" />
+        </div>
+      </div>
+    </div>
+    <script>
+      new fullpage("#fullpage", {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+        continuousVertical: true,
+        navigation: true,
+        slidesNavigation: true,
+        controlArrows: false,
+        sectionsColor: ["rgb(4, 243, 243)", "#fff", "rgb(243, 167, 4)"],
+      });
+
+      //methods
+      fullpage_api.setAllowScrolling(false);
+    </script>
+  </body>
+</html>
