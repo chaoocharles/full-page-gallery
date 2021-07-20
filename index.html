@@ -26,31 +26,19 @@
   <body>
     <div id="fullpage">
       <div class="section">
-        <div>
-          <div class="slide">
-            <div>
-              <img src="images/image.png" alt="first image" />
-              <img src="images/image3.png" alt="first image" />
-            </div>
-          </div>
-          <div class="slide">
-            <img src="images/image3.png" alt="first image" />
-            <img src="images/image.png" alt="first image" />
-          </div>
-          <div class="slide">
-            <img src="images/image4.png" alt="first image" />
-            <img src="images/image3.png" alt="first image" />
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div>
+        <div class="images">
+          <img src="images/image.png" alt="first image" />
           <img src="images/image3.png" alt="first image" />
-          <img src="images/image4.png" alt="first image" />
         </div>
       </div>
       <div class="section">
-        <div>
+        <div class="images">
+          <img src="images/image4.png" alt="first image" />
+          <img src="images/image3.png" alt="first image" />
+        </div>
+      </div>
+      <div class="section">
+        <div class="images">
           <img src="images/image.png" alt="first image" />
           <img src="images/image2.png" alt="first image" />
         </div>
@@ -61,10 +49,11 @@
         //options here
         autoScrolling: true,
         scrollHorizontally: true,
-        continuousVertical: true,
         navigation: true,
         slidesNavigation: true,
-        controlArrows: false,
+        responsiveWidth: 750,
+        responsiveHeight: 0,
+        responsiveSlides: true,
         sectionsColor: ["rgb(4, 243, 243)", "#fff", "rgb(243, 167, 4)"],
       });
 
