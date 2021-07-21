@@ -15,16 +15,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"
-      integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.extensions.min.js"
-      integrity="sha512-v0jjVvFpZqb1BcXhgLbaBDRKwZ09IpWFZL5NHTNbW9MlSjhZihkxEz2uNeMGd6HuK1qnSEL6JdyTr24ZHlgKow=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"
+      integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
@@ -61,13 +54,12 @@
         slidesNavigation: true,
         // responsiveWidth: 750,
         responsiveHeight: 0,
-        scrollOverflow: true,
         // responsiveSlides: true,
         sectionsColor: ["rgb(4, 243, 243)", "#fff", "rgb(243, 167, 4)"],
       });
 
       //methods
-      fullpage_api.setAllowScrolling(false);
+      fullpage_api.setAllowScrolling(true);
     </script>
   </body>
 </html>
