@@ -3,21 +3,16 @@
   align-items: center;
   justify-content: center;
 }
-
-.fp-controlArrow.fp-next {
-  right: 45px !important;
+.section .images img {
+  height: 50%;
 }
-.fp-controlArrow.fp-prev {
-  left: 45px !important;
-}
-
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   .section .images {
     height: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
   }
   .section .images img {
-    width: 80%;
+    height: auto;
+    width: 100%;
   }
 }
